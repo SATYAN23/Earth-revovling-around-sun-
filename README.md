@@ -31,7 +31,7 @@ f = 76 * e21 nm2/s2
 
 # observed value
 
-observed unidirectional force from moon to earth only is f=ma 33.579 units
+observed unidirectional force from moon to earth only is f=ma is 33.579 units
 
 taking muthual directional force i.e.,2*f is  67.15 units
 
