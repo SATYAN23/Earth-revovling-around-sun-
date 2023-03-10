@@ -24,7 +24,7 @@ since earth mass is four times bigger than mass of moon so i taken 100:25 ratio 
 calculation of velocityof moon revolving around earth and also circumference of revolving circle 
 takes as displacement 
 
-overrall speed of moon around earth is "314.0" as per observations 
+overrall speed of moon around earth is "329.70" as per observations 
 
 
 # calculated value
