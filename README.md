@@ -24,7 +24,7 @@ since earth mass is four times bigger than mass of moon so i taken 100:25 ratio 
 calculation of velocityof moon revolving around earth and also circumference of revolving circle 
 takes as displacement 
 
-overrall speed of moon around earth is "329.70" as per observations 
+overrall distance of moon around earth is "329.70units" as per observations 
 
 
 # calculated value
@@ -32,6 +32,10 @@ overrall speed of moon around earth is "329.70" as per observations
 Also muthual force exerting on earth and moon is 
 f = (g * m1 * m2)/(r * 2)
 f = 76 * e21 nm2/s2
+
+v = dD/dt
+
+D = 2 * PI * r
 
 
 # observed value
