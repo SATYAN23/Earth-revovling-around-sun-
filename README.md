@@ -30,7 +30,9 @@ overrall distance of moon around earth is "329.70units" as per observations
 # calculated value
 
 Also muthual force exerting on earth and moon is 
+
 f = (g * m1 * m2)/(r * 2)
+
 f = 76 * e21 nm2/s2
 
 v = dD/dt
