@@ -11,7 +11,7 @@
 my good wishes to you all folks around
 
 today, i am talking about a python code developed based on earth and moon relationship
-taking earth as center and moon revoling around it 
+taking earth as center and moon revolving around it 
 
 
 while calculating speed of moon around earth
