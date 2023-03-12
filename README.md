@@ -18,7 +18,7 @@ while calculating speed of moon around earth
 
 since distance directly proportional to runtime based on mass ratio of two planets
 
-i.e,   acceleration units are " dm * dt/dm " means change in mass proportional to change in runtime
+i.e,   velocity units are " dD / dt " means change in mass proportional to change in runtime
 
 since earth mass is four times bigger than mass of moon so i taken 100:25 ratio under runtime for 
 calculation of velocityof moon revolving around earth and also circumference of revolving circle 
