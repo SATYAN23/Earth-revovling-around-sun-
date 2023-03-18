@@ -30,7 +30,7 @@ def main():
 
     speed = (2*3.14*r)/(8000/2100)
     speed =  str(speed)
-    print("velocity of moon around sun : " + speed)
+    print("velocity of circle around solid circle" + speed)
     
         
     run = True
@@ -51,7 +51,7 @@ def main():
             win.fill((255, 255, 255))
 
 
-            S = "velocity of moon" +  " : "  + str(speed) + "units"
+            S = "velocity of circle " +  " : "  + str(speed) + "units"
             draw3 = font.render(str(S), True, color)
             win.blit(draw3,(10,10))
 
