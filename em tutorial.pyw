@@ -23,14 +23,14 @@ def main():
     r = 200
     win = pygame.display.set_mode((width, height))
     pygame.display.set_caption("earth-moon-relation")
-    font = pygame.font.SysFont("Segoe UI", 24)
+    font = pygame.font.SysFont("Segoe UI", 25)
     clock = pygame.time.Clock()
     cpt = win.get_rect().center
 
 
-    distance = (2*3.14*r)/(8000/2100)
-    distance =  str(distance)
-    print("distance of moon to earth : " + distance)
+    speed = (2*3.14*r)/(8000/2100)
+    speed =  str(speed)
+    print("velocity of moon around sun : " + speed)
     
         
     run = True
@@ -47,11 +47,11 @@ def main():
                 
 
         
-        for i in range(0, 720):
+        for i in range(0, 360):
             win.fill((255, 255, 255))
 
 
-            S = "distance of moon" +  " : "  + str(distance) + "units"
+            S = "velocity of moon" +  " : "  + str(speed) + "units"
             draw3 = font.render(str(S), True, color)
             win.blit(draw3,(10,10))
 
