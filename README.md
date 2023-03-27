@@ -4,9 +4,6 @@
 
 
 
-![Screenshot 2023-03-12 195831](https://user-images.githubusercontent.com/106912394/224551281-1256f860-c465-4f6f-977b-02a16a7cfa33.png)
-
-
 
 
 my good wishes to you all folks around
