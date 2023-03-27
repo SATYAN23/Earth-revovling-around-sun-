@@ -38,7 +38,7 @@ g = 6.67* e-11 Nm2/kg2
 
 v = dD/dt
 
-D = 2 * PI * r
+D = 2 * PI * dr
 
 
 # observed value
