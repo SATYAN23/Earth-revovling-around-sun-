@@ -1,5 +1,13 @@
 ***finding velocity of moon around earth graphically using pygame ***
 
+# requirements:
+pip install python
+pip install pygame
+pip install pyautogui
+
+run code by 
+python 
+
 # earth-moon-GRAPHICAL-VISUAL
 
 
