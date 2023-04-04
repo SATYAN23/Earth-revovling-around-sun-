@@ -4,79 +4,79 @@ import pygame
 from datetime import datetime
 import time
 import pyautogui
+from pygame.locals import *
+
 width, height = pyautogui.size()
 pygame.init()
 
-
-os.environ['SDL_VIDEO_WINDOW_POS'] = "%d, %d" %((73.15*width)/100, (46.67*height)/100)
 i_icon = os.getcwd() + '.\p.png'
 icon = pygame.image.load(i_icon)
 pygame.display.set_icon(icon)
-speed =0
+
+speed = 0
+
 
 def main():
     global speed
     color = (0, 255, 0)
 
-    width = 500
-    height = 500
-    r = 200
+    width = 1000
+    height = 1000
+    r = 300
+
     win = pygame.display.set_mode((width, height))
     pygame.display.set_caption("earth-moon-relation")
     font = pygame.font.SysFont("Segoe UI", 25)
     clock = pygame.time.Clock()
     cpt = win.get_rect().center
 
-
-    speed = (2*3.14*r)/(8000/2100)
-    speed =  str(speed)
+    speed = 2 * 3.14 * r / (8000 / 2100)
+    speed = str(speed)
     print("velocity of circle around solid circle" + speed)
-    
-        
+
     run = True
     while run:
-        clock.tick(8000/2100)
+        clock.tick(60)
 
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
-                run = False    
-        
+                run = False
 
+                # circle and spline lines
 
-        #circle and spline lines
-                
-
-        
         for i in range(0, 360):
             win.fill((255, 255, 255))
 
-
-            S = "velocity of circle " +  " : "  + str(speed) + "units"
+            S = "velocity of circle " + " : " + str(speed) + "units"
             draw3 = font.render(str(S), True, color)
-            win.blit(draw3,(10,10))
+            win.blit(draw3, (10, 10))
 
-        
-            pygame.draw.circle(win, (71, 186,53),[r+50 +r*m.sin(m.radians(i)),r+50+r*m.cos(m.radians(i))],12,12)
+            earth = pygame.image.load("E.png")
+            earth = pygame.transform.scale(earth, (60, 60))
+            win.blit(earth, (r + 160 + r * m.sin(m.radians(i)), r + 160 + r * m.cos(m.radians(i))))
 
-            pygame.draw.circle(win, (51, 255,51),[250,250],200,2)
-            pygame.draw.circle(win, (71, 186,53),[cpt[0],cpt[1]],25,25)
+            earth_rect = earth.get_rect(x = r + 150 + r * m.sin(m.radians(i)), y = r + 140 + r * m.cos(m.radians(i)))
 
-            pygame.draw.line(win, (0, 255,0), (250,50), (250,450))
-            pygame.draw.line(win, (0, 255,0), (50,250), (450,250))
+            
+            moon = pygame.image.load("M.png")
+            moon = pygame.transform.scale(moon, (20, 20))
+            win.blit(moon, earth_rect)
 
-            pygame.draw.line(win,(0, 255,0), (r + 50 + r * m.cos(m.radians(135)),r + 50 +  r * m.sin(m.radians(135))),
-                         (r + 50 -r * m.cos(m.radians(135)) ,r +50 - r * m.sin(m.radians(135))))
+            sun = pygame.image.load("S.png")
+            sun = pygame.transform.scale(sun, (100, 100))
+            win.blit(sun, [450, 450])
+            pygame.draw.circle(win, (51, 255, 51), [500, 500], 200, 2)
+            pygame.display.update()
 
-            pygame.draw.line(win,(0, 255,0), (r + 50 - r * m.cos(m.radians(45)),r +50 - r * m.sin(m.radians(45))),
-                         (r + 50+r * m.cos(m.radians(45)) ,r + 50+ r * m.cos(m.radians(45))))
             pygame.display.update()
 
         pygame.display.update()
-        
+
     pygame.quit()
-      
+
+
 if __name__ == "__main__":
-    main() 
+    main()
 
 
 
@@ -93,4 +93,4 @@ if __name__ == "__main__":
 
 
 
-                
+
